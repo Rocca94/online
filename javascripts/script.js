@@ -6,3 +6,28 @@ function isTriangle(n1,n2.n3){
   }else{
     return false;
   }
+}
+
+function getTriangleType(n1,n2,n3){
+  var ret;
+  if(n1===n2){
+    if(n1===n3){
+      if(n2===n3){
+        ret="Equilatero";
+      }
+    }else{
+      if(n2===n3){
+        ret="Isoscele";
+      }
+    }
+  }else{
+    if(n2===n3 && n3===n1){
+      ret="Isoscele";
+    }
+  }
+}
+if(ret!=null){
+  ret="Isoscele";
+}
+return ret;
+}
