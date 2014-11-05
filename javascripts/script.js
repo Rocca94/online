@@ -1,3 +1,4 @@
+
 function isTriangle(n1,n2.n3){
   var list=[n1,n2,n3];
   list.sort();
