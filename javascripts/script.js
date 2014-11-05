@@ -32,3 +32,16 @@ if(ret!=null){
 }
 return ret;
 }
+
+function sumAll(array){
+  var sum=0;
+  for (i = 0; i < array.length; i++) {
+    sum=sum+array[i];
+  }
+  return sum;
+}
+
+function aggregateAll(array, aggrFunc){
+  
+}
+
