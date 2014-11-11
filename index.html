@@ -52,7 +52,7 @@
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <div class="form"><form><input type="text" name=colore><input type="button" class="button"</form></div>
+        <div class="form"><form><input type="text" class="color" name=colore><input type="button" class="button"</form></div>
         <div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow"></div><div></div><div class="blue"></div><div class="green"></div><div class="greenyellow"></div><div class="lightseagreen"></div><div class="orange"></div><div class="yellow" id="last"></div>
         <script>
             $(document).ready(function(){
@@ -63,7 +63,7 @@
                 $(".button").click(function(){
                     var col=$("input[name=colore]").val();
                     var $last=$("#last");
-                    $last.after("<div id=\"last\" style=\"display:inline-block;background-color:"+ col+"\"></div>");
+                    $last.after("<div id=\"last\" style=\"display:inline-block;background-color:#"+ col+"\"></div>");
                     $last.removeAttr("id");
                 })
            });
