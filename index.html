@@ -62,7 +62,7 @@
                 $(".button").click(function(){
                     var col=$("input[name=colore]").val();
                     var $last=$("#last");
-                    $last.after("<div style=\"display:inline-block;background-color:"+ col+"\"></div>");
+                    $last.after("<div id=\"last\" style=\"display:inline-block;background-color:"+ col+"\"></div>");
                     $last.removeAttr("id");
                 })
            });
