@@ -31,7 +31,8 @@
             }
             .greenyellow{
                 background-color: greenyellow;
-            }.lightseagreen{
+            }
+            .lightseagreen{
                 background-color: lightseagreen;
             }
             .form{
@@ -60,7 +61,9 @@
                 });
                 $(".button").click(function(){
                     var col=$("input[name=colore]").val();
-                    $("#last").after("<div style=\"display:inline-block;background-color:"+ col+"\"></div>")
+                    var $last=$("#last");
+                    $last.after("<div style=\"display:inline-block;background-color:"+ col+"\"></div>");
+                    $last.removeAttr("id");
                 })
            });
         </script>
