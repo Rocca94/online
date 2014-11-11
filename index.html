@@ -53,7 +53,8 @@
         <script>
             $(document).ready(function(){
                 $("div").click(function(){
-                    $(this).fadeOut("fast");
+                    if($(this).hasClass("form")){}else{
+                    $(this).fadeOut("fast");}
                 });
                 $(".button").click(function(){
                     var col=$("input[name=colore]").val();
