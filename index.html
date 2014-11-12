@@ -59,9 +59,9 @@
         <div class="quadrato orange"></div><div class="quadrato yellow" id="last"></div>
         <script>
             $(document).ready(function(){
-                $("div").click(function(){
+                $(".quadrato").click(function(){
                     if($(this).hasClass("form")){}else{
-                    $(this).fadeOut("fast");}
+                    $(this).fadeOut("slow");}
                 });
                 $(".button").click(function(){
                     var col=$("input[name=colore]").val();
