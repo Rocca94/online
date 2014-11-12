@@ -59,16 +59,15 @@
         <div class="quadrato orange"></div><div class="quadrato yellow" id="last"></div>
         <script>
             $(document).ready(function(){
-                $(".quadrato").click(function(){
-                    if($(this).hasClass("form")){}else{
-                    $(this).fadeOut("slow");}
-                });
                 $(".button").click(function(){
                     var col=$("input[name=colore]").val();
                     var $last=$("#last");
                     $last.after("<div class=\"quadrato\" id=\"last\" style=\"display:inline-block;background-color:#"+ col+"\"></div>");
                     $last.removeAttr("id");
                 })
+           });
+           $(".quadrato").click(function(){
+                $(this).fadeOut("slow");
            });
         </script>
     </body>
