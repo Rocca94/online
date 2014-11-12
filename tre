@@ -1,0 +1,19 @@
+        $(function() {
+		  $(".button").click(function(){
+                    var col=$("input[name=colore]").val();
+                    var $last=$("#last");
+                    var v=["red","blue","yellow","green","orange"];
+				    /*var hue = 'rgb('
+					+ (Math.floor(Math.random() * 256)) + ','
+					+ (Math.floor(Math.random() * 256)) + ','
+					+ (Math.floor(Math.random() * 256)) + ')';*/
+					var pos= Math.floor(Math.random()*6);
+				
+                   $last.after("<div class=\"quadrato "+v[pos]+"\" id=\"last\" ></div>");
+                    $last.removeAttr("id");
+                })
+         $(document).on("click", ".quadrato", function(e) {
+				$(this).fadeOut("slow");
+          });
+      
+		   });
