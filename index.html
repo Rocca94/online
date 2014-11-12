@@ -15,9 +15,14 @@
                 border-radius:10px;
                 margin: 5px;
                 display:inline-block;
+				box-shadow:2px 2px 2px 2px;
             }
             .red{
-                background-color: red;
+               background-image: -o-linear-gradient(bottom, #FC0505 0%, #F28A8A 49%, #B30909 100%);
+			   background-image: -moz-linear-gradient(bottom, #FC0505 0%, #F28A8A 49%, #B30909 100%);
+               background-image: -webkit-linear-gradient(bottom, #FC0505 0%, #F28A8A 49%, #B30909 100%);
+               background-image: -ms-linear-gradient(bottom, #FC0505 0%, #F28A8A 49%, #B30909 100%);
+               background-image: linear-gradient(to bottom, #FC0505 0%, #F28A8A 49%, #B30909 100%);
             }
             .blue{
                 background-color: blue;
@@ -51,24 +56,13 @@
                 
             }
         </style>
-        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="jquery-1.10.2.js"></script>
         <script type="text/javascript" src="JSColor.js"></script>
+		<script type="text/javascript" src="tre.js"></script>
     </head>
     <body>
-        <div class="form"><form><input type="text" class="color" name="colore"><input type="button" class="button"</form></div>
+        <div class="form"><form><input type="text" class="color" name="colore"><input type="button" class="button"></form></div>
         <div class="quadrato orange"></div><div class="quadrato yellow" id="last"></div>
-        <script>
-            $(document).ready(function(){
-                $(".button").click(function(){
-                    var col=$("input[name=colore]").val();
-                    var $last=$("#last");
-                    $last.after("<div class=\"quadrato\" id=\"last\" style=\"display:inline-block;background-color:#"+ col+"\"></div>");
-                    $last.removeAttr("id");
-                })
-           });
-           $(".quadrato").click(function(){
-                $(this).fadeOut("slow");
-           });
-        </script>
+
     </body>
 </html>
